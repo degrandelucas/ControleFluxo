@@ -1,18 +1,33 @@
-## Getting Started
+# Contador - Aplicação de Contagem de Números
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto é uma aplicação Java que realiza a contagem de números entre dois valores fornecidos pelo usuário. A aplicação coleta dois números do usuário, calcula a diferença entre eles e exibe uma sequência de números até o valor resultante da diferença. Caso o primeiro número seja maior ou igual ao segundo número, uma exceção será lançada e tratada.
 
-## Folder Structure
+## Funcionalidades Principais
 
-The workspace contains two folders by default, where:
+- **Coleta de Números do Usuário:** Solicita ao usuário que insira dois números inteiros.
+- **Cálculo da Diferença:** Utiliza a classe `Diferenca` para calcular a diferença entre os dois números fornecidos.
+- **Exibição da Sequência:** Imprime a sequência de números do 1 até a diferença calculada.
+- **Tratamento de Exceções:** Lida com casos em que o primeiro número é maior ou se ambos são iguais, lançando exceções apropriadas.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Passo a Passo do Projeto
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+### Passo 1: Coletar Números
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Quando o programa é iniciado, o usuário é solicitado a inserir dois números inteiros. Estes números são então utilizados para calcular a diferença entre eles.
 
-## Dependency Management
+### Passo 2: Calcular a Diferença
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+O cálculo da diferença é realizado pela classe `Diferenca`. Se o primeiro número for maior que o segundo ou se forem iguais, uma exceção `IllegalArgumentException` é lançada.
+
+### Passo 3: Exibir a Sequência
+
+Após o cálculo bem-sucedido, o programa exibe uma sequência de números do 1 até o resultado da diferença.
+
+### Passo 4: Tratamento de Exceções
+
+Se ocorrer uma exceção durante o cálculo, uma mensagem de erro é exibida. Além disso, uma exceção genérica é lançada diretamente no método `main` para indicar um erro genérico na execução.
+
+## Tecnologias Utilizadas
+
+- **Java:** Linguagem de programação utilizada para desenvolver a aplicação.
+- **Scanner (java.util.Scanner):** Pacote utilizado para capturar entradas do usuário via console.
