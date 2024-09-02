@@ -1,4 +1,4 @@
-import java.util.Scanner; // Importar a classe Scanner
+import java.util.Scanner; // Importar a classe Scanner do pacote java.util
 
 /**
  * A classe Contador recebe dois números de entrada via terminar pelo usuário.
